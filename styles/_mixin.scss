@@ -1,0 +1,24 @@
+// ---------------------------------------------------------------- media query ----------------------------------------------------------------
+@mixin for-desktop-up {
+  @media (min-width: 1080px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-up {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-down {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-down {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
