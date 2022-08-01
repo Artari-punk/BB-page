@@ -1,13 +1,9 @@
 import MerkleTree from "merkletreejs";
 import { ethers } from 'ethers'
 import { chain } from '../utils/constants'
+import { allowListNodes } from './list'
 
 export const merkleLeafMap = new Map()
-
-const allowListNodes = [
-    ["0xd7f46F27369AfaA0a0db4B9C9f476e2993dF5c08", 100, 2],
-    ["0x92527292b221116c4D956a984934dC6047CcD87e", 100, 3],
-]
 
 const leafNodes = allowListNodes.map(([address, maxQuantity, salesRound]) => {
     const hash = ethers.utils.solidityKeccak256(
@@ -29,3 +25,4 @@ const leafNodes = allowListNodes.map(([address, maxQuantity, salesRound]) => {
 
 export const merkleTree = new MerkleTree(leafNodes, ethers.utils.keccak256, { sortPairs: true });
 
+console.log('merkleRoot', merkleTree.getHexRoot(), 'Allowlist', allowListNodes.length)
