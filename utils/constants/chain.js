@@ -1,5 +1,5 @@
 
-import { Rinkeby } from '@usedapp/core'
+import { Mainnet } from '@usedapp/core'
 
 // export const chain = {
 //     contractAddress: "0xc2214BBCbCdb92f155443771C751E8FECb9bCf83", // 0xc2214BBCbCdb92f155443771C751E8FECb9bCf83
