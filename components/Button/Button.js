@@ -1,14 +1,15 @@
+import { forwardRef } from 'react'
 import clsx from 'clsx'
 
-function Button(props) {
+function Button(props, ref) {
   const { children, className, ...rest } = props
   const cn = clsx('Button', className)
 
   return (
-    <button {...rest} className={cn}>
+    <button {...rest} className={cn} ref={ref}>
       {children}
     </button>
   )
 }
 
-export default Button
+export default forwardRef(Button)

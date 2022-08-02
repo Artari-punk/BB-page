@@ -136,7 +136,7 @@ function HomeMint({ }, ref) {
                 </div>
                 {statusMessage !== "" && (
                     <div>
-                        <div>{statusMessage}</div>
+                        <div className="h-txt-error">{statusMessage}</div>
                     </div>
                 )}
                 <div className="MintModal__quantity">

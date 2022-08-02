@@ -185,7 +185,7 @@
     &__flip-card:hover &__flip-card-inner {
         transform: rotateY(180deg);
     }
-
+   
     &__flip-card-front,
     &__flip-card-back {
         border-radius: 25px;
@@ -232,8 +232,11 @@
         opacity: 1;
     }
 
+    &__flip-card-inner .UserCard__title {
+        visibility: visible;
+    }
     &__flip-card-inner:hover .UserCard__title {
-        transform: rotateY(180deg);
+        visibility: hidden;
     }
 }
 
@@ -626,10 +629,19 @@
 
         p {
             margin-top: 12px;
+            // text-align: justify;
         }
 
-        a {
+         a {
             text-decoration: underline;
+        }
+
+        ul {
+            margin: 10px 0;
+
+            > * + * {
+                margin-top: 8px;
+            }
         }
     }
 }
@@ -643,7 +655,7 @@
 }
 
 .ButtonGray {
-    background-color: var( --color-grey2);
+    background-color: var(--color-grey2);
     cursor: default;
 }
 

@@ -29,7 +29,7 @@ const navs = [
   },
   {
     key: nanoid(),
-    name: 'Teams',
+    name: 'Team',
     link: '#teams',
     isBlank: false,
   },
@@ -58,7 +58,7 @@ function Navbar() {
   const { activateBrowserWallet, deactivate, account, error, switchNetwork } = useEthers()
 
   useEffect(() => {
-    if (error && error.name === "ChainIdError") {
+    if (error && error.name === 'ChainIdError') {
       deactivate()
       switchNetwork(chain.network.chainId)
     }
@@ -129,7 +129,9 @@ function Navbar() {
           }}
           className="Navbar__nav__btn-connect"
         >
-          {account ? `${account.substring(0, 6)}...${account.slice(-4)}` : "Connect"}
+          {account
+            ? `${account.substring(0, 6)}...${account.slice(-4)}`
+            : 'Connect'}
         </Button>
       </ul>
     </navbar>
