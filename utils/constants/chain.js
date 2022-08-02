@@ -14,7 +14,7 @@ import { Rinkeby } from '@usedapp/core'
 // }
 
 export const chain = {
-    contractAddress: "0xE96733F5eDAc1656B1F26d258e14EDAb43020BaA",
-    network: Rinkeby,
-    rpc: "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    contractAddress: "0x670c01BCb0cC6536DAd3c0F14630BCDc1Ec0EF46",
+    network: Mainnet,
+    rpc: "https://mainnet.infura.io/v3/e8b349390d08426a880850664d1f3c1b"
 }
