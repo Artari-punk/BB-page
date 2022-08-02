@@ -185,7 +185,7 @@
     &__flip-card:hover &__flip-card-inner {
         transform: rotateY(180deg);
     }
-
+   
     &__flip-card-front,
     &__flip-card-back {
         border-radius: 25px;
@@ -232,8 +232,11 @@
         opacity: 1;
     }
 
+    &__flip-card-inner .UserCard__title {
+        visibility: visible;
+    }
     &__flip-card-inner:hover .UserCard__title {
-        transform: rotateY(180deg);
+        visibility: hidden;
     }
 }
 
@@ -626,10 +629,19 @@
 
         p {
             margin-top: 12px;
+            // text-align: justify;
         }
 
-        a {
+         a {
             text-decoration: underline;
+        }
+
+        ul {
+            margin: 10px 0;
+
+            > * + * {
+                margin-top: 8px;
+            }
         }
     }
 }
@@ -640,37 +652,4 @@
     border-radius: 20px;
     line-height: 0.8;
     padding: 16px 100px;
-}
-
-.ButtonGray {
-    background-color: var( --color-grey2);
-    cursor: default;
-}
-
-.MintModal {
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        text-align: center;
-        overflow: auto;
-        word-wrap: break-word;
-        gap: 1em;
-
-        color: var(--color-black);
-    }
-
-    &__quantity {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 1em;
-    }
-
-    &__quantity__btn {
-        line-height: 0.8;
-        padding: 1em;
-    }
 }

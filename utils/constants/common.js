@@ -25,20 +25,14 @@ export const questions = [
   {
     key: nanoid(),
     question: 'What are the total supply, the mint date and price details?',
-    answer: `<p>An Art, An Application, A Community and A Brand! Every dot connected to Bubbly. We are moving to the future. We are here to stay with you, together in the fun, friendly and informative community.</p>
-      <p>We want to comfort you with the new experience between Web2 and Web3, the story of Bubbly will expand to physical art, exclusive merch, and maybe real-life events. We are committed to a long-term plan for both art and app utilities. We are always open to community suggestions that will bring together creativity and flexibility in the fast-moving Web3 space.</p>
-    `,
-  },
-  {
-    key: nanoid(),
-    question: 'What are the total supply, the mint date and price details?',
     answer: `<p>Supply: 3,333 NFTs</p>
 
       <p>After careful consideration of the current market condition, we have set forth for follow minting details:</p>
       
-      <p>Mint date: First week of August</p>
+      <p>Mint date: 3 of August</p>
       <p>Mint prices:</p>
       <p>Presale:	0.049 Eth (Bubblylist, GA winners & KrisDamin’s OGs)</p>
+      <p>Allowlist sale : 0.059 Eth</p>
       <p>Public Sale: 	0.069 Eth</p>
     `,
   },
@@ -49,7 +43,7 @@ export const questions = [
       <ul>
         <li>1. By sending good vibes in our <a href="https://discord.gg/bubblystory" target="_blank" rel="noreferrer">Discord</a>, you can collect Bitcoin and buy Bubblylist in the shop.</li>
         <li>2. Be a winner from Twitter Giveaways from Bubbly and our collab partners. Follow Bubbly <a href="https://twitter.com/bubblystory" target="_blank" rel="noreferrer">Twitter</a> and get a chance to win by reacting to the posts.</li>
-        <li>3. Public Raffle in Premint <a href="https://www.premint.xyz/bubblypublicraffle/" target="_blank" rel="noreferrer">here</a></li>
+        <li>3. Public Raffle in Premint</li>
         <li>4. Holding an artwork from our artist, Krisdamin. Snapshot will be taken 2 days before mint date.</li>
       </ul>
       <p>Follow <a href="https://twitter.com/krisdamin" target="_blank" rel="noreferrer">KrisDamin</a> and <a href="https://discord.gg/abCNrRCKBh" target="_blank" rel="noreferrer">discord</a> to learn more<p>
@@ -73,14 +67,14 @@ export const questions = [
   {
     key: nanoid(),
     question: 'Where can I learn more about the project?',
-    answer: `<p>You can find out more in <a href="https://tinyurl.com/28rbu33a" target="_blank" rel="noreferrer">our medium article</a></br>
+    answer: `<p>You can find out more in our <a href="https://tinyurl.com/28rbu33a" target="_blank" rel="noreferrer">medium article</a></br>
     And in the <a href="https://bubbly-1.gitbook.io/whitepaper/" target="_blank" rel="noreferrer">whitepaper</a><p>`,
   },
   {
     key: nanoid(),
     question: 'How do I contact support?',
     answer:
-      '<p>Please join Bubbly <a href="https://discord.gg/NZrKDYcG" target="_blank" rel="noreferrer">Discord</a> and open the ticket.</p>',
+      '<p>Please join <a href="https://discord.gg/NZrKDYcG" target="_blank" rel="noreferrer">Bubbly Discord</a> and open the ticket.</p>',
   },
 ]
 
@@ -108,16 +102,16 @@ export const showcases = [
   },
   {
     key: nanoid(),
-    like: 'Diving, Art museums and Sweets ',
-    dislike: 'RPG game and having 0 BIBCOIN in the wallet',
-    name: 'MUNCHIE',
+    like: 'Reading books, Coding and Collecting Bibcoin',
+    dislike: 'Cat and Christmas day',
+    name: 'DEMON',
     imageUrl: '/images/showcases-04-Demon.jpg',
   },
   {
     key: nanoid(),
-    like: 'Reading books, Coding and Collecting Bibcoin',
-    dislike: 'Cat and Christmas day',
-    name: 'DEMON',
+    like: 'Diving, Art museums and Sweets ',
+    dislike: 'RPG game and having 0 BIBCOIN in the wallet',
+    name: 'MUNCHIES',
     imageUrl: '/images/showcases-05-Munchies.jpg',
   },
   {
@@ -146,6 +140,14 @@ export const showcases = [
 export const teams = [
   {
     key: nanoid(),
+    name: 'Condominium',
+    position: 'Founder/ Collab manager',
+    desc: 'NFTs and physical art collector',
+    profile: '@condo2minium',
+    imageUrl: '/images/team-Condo.jpg',
+  },
+  {
+    key: nanoid(),
     name: 'Tom88jerry',
     position: 'Founder',
     desc: 'Kaggle competition expert and Engineer with expertise in ML/AI',
@@ -170,14 +172,6 @@ export const teams = [
   },
   {
     key: nanoid(),
-    name: 'Condo',
-    position: 'Collab Manager',
-    desc: 'NFTs and physical art collector',
-    profile: '@condo2minium',
-    imageUrl: '/images/team-Condo.jpg',
-  },
-  {
-    key: nanoid(),
     name: 'Pylynn',
     position: 'Project Manager',
     desc: 'Business consultant of global firm and Web3 enthusiast',
@@ -194,11 +188,59 @@ export const teams = [
   },
   {
     key: nanoid(),
+    name: 'Marita',
+    position: 'Marketing Team',
+    desc: 'Cats and NFTs lover',
+    profile: '@Maritaleu',
+    imageUrl: '/images/team-mari.jpg',
+  },
+  {
+    key: nanoid(),
+    name: 'Quark Hadron',
+    position: 'Comm. & Dev. Team',
+    desc: 'Web Developer by day Owl by night',
+    profile: '@Quark_Hadron',
+    imageUrl: '/images/team-Quark.png',
+  },
+  {
+    key: nanoid(),
+    name: 'Gapjirun',
+    position: 'Community Team',
+    desc: 'General Practitioner, NFT enthusiast & collector',
+    profile: '@Jirun2',
+    imageUrl: '/images/team-GapJirun.jpg',
+  },
+  {
+    key: nanoid(),
+    name: '0xDoy',
+    position: 'Community Team',
+    desc: 'Degen man',
+    profile: '@0x_doy',
+    imageUrl: '/images/team-0xDoy.jpg',
+  },
+  {
+    key: nanoid(),
+    name: '90sxJEDI',
+    position: 'Collab Team',
+    desc: 'A man who die during Bear market , TNFT lover',
+    profile: '@llie_k',
+    imageUrl: '/images/team-90sxJEDI.jpg',
+  },
+  {
+    key: nanoid(),
     name: 'Part',
     position: 'Marketing Manager',
     desc: 'Founder of luxury clothing store and collector of NFTs and irl collectibles.',
     profile: '@dtpartp',
     imageUrl: 'images/team-Part.jpg',
+  },
+  {
+    key: nanoid(),
+    name: 'OxyzSasori',
+    position: 'Bussiness Team',
+    desc: 'Former restaurant owner, trader and Crypto/Nft enthusiast',
+    profile: '@OxyzSasori',
+    imageUrl: '/images/team-0xyzSasori.jpg',
   },
   {
     key: nanoid(),
@@ -215,38 +257,6 @@ export const teams = [
     desc: 'DJ and experienced crypto trader',
     profile: '@armaniamn',
     imageUrl: '/images/team-DJ-AMN.jpg',
-  },
-  {
-    key: nanoid(),
-    name: 'Quark Hadron',
-    position: 'Comm. & Dev. Team',
-    desc: 'Web Developer by day Owl by night',
-    profile: '@Quark_Hadron',
-    imageUrl: '/images/team-Quark.png',
-  },
-  {
-    key: nanoid(),
-    name: 'OxyzSasori',
-    position: 'Bussiness Team',
-    desc: 'Former restaurant owner, trader and Crypto/Nft enthusiast',
-    profile: '@OxyzSasori',
-    imageUrl: '/images/team-0xyzSasori.jpg',
-  },
-  {
-    key: nanoid(),
-    name: 'Gapjirun',
-    position: 'Community Team',
-    desc: 'General Practitioner, NFT enthusiast & collector',
-    profile: '@Jirun2',
-    imageUrl: '/images/team-GapJirun.jpg',
-  },
-  {
-    key: nanoid(),
-    name: '90sxJEDI',
-    position: 'Collab Team',
-    desc: 'A man who die during Bear market , TNFT lover',
-    profile: '@llie_k',
-    imageUrl: '/images/team-90sxJEDI.jpg',
   },
   {
     key: nanoid(),
@@ -271,22 +281,6 @@ export const teams = [
     desc: 'Programmer , Full-stack Developer',
     profile: '@kitsanawai',
     imageUrl: '/images/team-JingJoe.jpg',
-  },
-  {
-    key: nanoid(),
-    name: 'Marita',
-    position: 'Marketing Team',
-    desc: 'Cats and NFTs lover',
-    profile: '@Maritaleu',
-    imageUrl: '/images/team-mari.jpg',
-  },
-  {
-    key: nanoid(),
-    name: '0xDoy',
-    position: 'Community Team',
-    desc: 'Degen man',
-    profile: '@0x_doy',
-    imageUrl: '/images/team-0xDoy.jpg',
   },
   {
     key: nanoid(),

@@ -19,8 +19,13 @@ function HomeHero({ mintModalRef }) {
   const layerConfett = useRef(null)
   const layerLine = useRef(null)
   const layerCloud = useRef(null)
+  const layerBtn = useRef(null)
 
   useEffect(() => {
+    if (layerBtn.current) {
+      layerBtn.current.style.top = `calc(86% + ${scrollY * 0.05}px)`
+    }
+
     if (layerLogo.current) {
       layerLogo.current.style.top = `${scrollY * 0.05}px`
     }
@@ -70,7 +75,13 @@ function HomeHero({ mintModalRef }) {
       id="parallax"
       ref={refWrapper}
     >
-      <Button className="Home__parallax__btn" onClick={onMintClicked}>Mint</Button>
+      <Button
+        ref={layerBtn}
+        className="Home__parallax__btn"
+        onClick={onMintClicked}
+      >
+        Mint
+      </Button>
       <img
         ref={layerBubblian}
         className="Home__parallax--image-props Home__parallax--absolute Home__parallax__bubblian"

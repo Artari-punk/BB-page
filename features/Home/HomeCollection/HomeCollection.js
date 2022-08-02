@@ -11,14 +11,14 @@ function HomeCollection(props) {
         <h1 className="h-title h-txt-center Home__collection__title">
           WHAT IS YOUR TRIBE?
         </h1>
-        <p>
+        <p className="h-txt-justify">
           Bubbly is an NFT collection for anyone unique and original. This pfp
           collection is generated from nearly 200 traits and consists of 23
           Legendary (1/1) pieces. There are 18 rare pieces created from notable
           artists who became Friends of Bubbly which makes the whole collection
           more special.
         </p>
-        <p>
+        <p className="h-txt-justify">
           Inspired by childhood memories, the artwork can represent the real
           you, someone you are or want to become.
         </p>
@@ -27,12 +27,12 @@ function HomeCollection(props) {
             return <UserCard key={showcase.key} {...showcase} />
           })}
         </div>
-        <p>
+        <p className="h-txt-justify">
           And Yes, the PFP is “You”, Bubblian. The Bubbly is your real buddy,
           who will comfort and guide you to a friendly community of fun,
           friendship and information.
         </p>
-        <p>
+        <p className="h-txt-justify">
           Be brave to get out of your comfort zone because Bubbly will always be
           there to protect you. Never fear to Be unique & Be original, Bu-Bo!
         </p>

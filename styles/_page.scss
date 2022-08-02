@@ -141,7 +141,7 @@
             background-size: contain;
             height: 100%;
             width: 100%;
-            aspect-ratio: 1968/2074;
+            aspect-ratio: 1;
         }
     }
 
@@ -206,12 +206,24 @@
 
         &__btn {
             position: absolute;
-            top: 85%;
-            left: 17%;
+            top: 86%;
+            left: 19%;
+            padding: 16px 180px;
             z-index: var(--z-index-btn-mint);
+
+            @media screen and (max-width: 1919px) {
+                padding: 16px 120px;
+                left: 20%;
+            }
+
+            @media screen and (max-width: 1440px) {
+                padding: 16px 80px;
+                left: 22%;
+            }
 
             @include for-tablet-down {
                 padding: 16px 80px;
+                left: 20%;
             }
 
             @include for-mobile-down {
@@ -219,6 +231,11 @@
                 // padding-left: 40px;
                 // padding-right: 40px;
                 font-size: 16px;
+            }
+
+            @media screen and (max-width: 500px) {
+                padding: 8px 24px;
+                font-size: 12px;
             }
         }
 

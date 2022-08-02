@@ -26,14 +26,14 @@ function HomeStory() {
         <h1 className="h-title Home__story__topic">
           ‘Fun from Arts, Function From App’
         </h1>
-        <p>
+        <p className="h-txt-justify">
           Once the rocket ship gears up to a full-stream, it launches into the
           universe. Bubbly will blow your mind with its magical powers. Inspired
           by childhood memories, with a narrative of cultivating conscience and
           encouragement for those to step-out of their comfort zones, whilst
           feeling protected and supported.
         </p>
-        <p>
+        <p className="h-txt-justify">
           This creative, colourful and adventurous world occupied by the coolest
           characters awaits!
         </p>
