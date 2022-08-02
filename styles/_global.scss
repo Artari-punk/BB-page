@@ -139,6 +139,10 @@ html {
   text-align: justify;
 }
 
+.h-txt-error {
+  color: var(--color-red);
+}
+
 body::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none;
